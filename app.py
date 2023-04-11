@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from tradingview_ta import *
 
 with open('KUCOIN_BINANCE_HUOBI.txt') as f:
+
     lines = f.read()
     line = lines.split('\n')
 app = Flask(__name__)
